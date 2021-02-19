@@ -4,6 +4,7 @@ import { View, Text, StatusBar, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 import Bookmark from '../components/Bookmark';
 import About from '../components/About';
+import Stats from '../components/Stats';
 import { colors } from '../styles/styles';
 
 const HomeScreen = () => {
@@ -16,6 +17,7 @@ const HomeScreen = () => {
             <View>
                 <Bookmark />
                 <About />
+                <Stats />
             </View>
         </View>
     );
