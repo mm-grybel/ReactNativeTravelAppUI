@@ -6,7 +6,7 @@ import { gs, colors } from '../styles/styles';
 
 const Bookmark = () => {
     return (
-        <View style={styles.container}>
+        <View style={styles.bookmark}>
             <Feather name='bookmark' size={24} color={colors.pink} />
         </View>
     );

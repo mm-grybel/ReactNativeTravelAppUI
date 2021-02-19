@@ -3,14 +3,20 @@ import { View, Text, StatusBar, StyleSheet } from 'react-native';
 
 import Header from '../components/Header';
 import Bookmark from '../components/Bookmark';
+import About from '../components/About';
 import { colors } from '../styles/styles';
 
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
             <StatusBar barStyle='light-content' />
+
             <Header />
-            <Bookmark />
+
+            <View>
+                <Bookmark />
+                <About />
+            </View>
         </View>
     );
 };
