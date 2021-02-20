@@ -6,6 +6,7 @@ import Bookmark from '../components/Bookmark';
 import About from '../components/About';
 import Stats from '../components/Stats';
 import Amenities from '../components/Amenities';
+import Address from '../components/Address';
 import { colors } from '../styles/styles';
 
 const HomeScreen = () => {
@@ -20,6 +21,7 @@ const HomeScreen = () => {
                 <About />
                 <Stats />
                 <Amenities />
+                <Address />
             </View>
         </View>
     );
