@@ -4,14 +4,14 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Button } from 'react-native-elements';
 
-import { gs, colors } from '../styles/styles';
+import { gs, colors } from '../../styles/styles';
 
 const Address = () => {
     return (
         <View>
             <View style={{ backgroundColor: '#000' }}>
                 <Image
-                    source={require('../assets/images/map.jpeg')}
+                    source={require('../../assets/images/map.jpeg')}
                     style={{ height: 200, opacity: 0.2 }} 
                 />
             </View>

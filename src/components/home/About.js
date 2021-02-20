@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import { gs, colors } from '../styles/styles';
+import { gs, colors } from '../../styles/styles';
 
 const hotel = {
     name: 'Mt. Catlin Hotel',

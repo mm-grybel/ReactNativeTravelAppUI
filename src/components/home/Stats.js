@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import { gs, colors } from '../styles/styles';
+import { gs, colors } from '../../styles/styles';
 
 const starColors = [ '#e3ab53', '#e3ab53', '#e3ab53', '#e3ab53', '#8b6f43' ];
 

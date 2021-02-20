@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Image, Dimensions, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import { gs } from '../styles/styles';
+import { gs } from '../../styles/styles';
 
 const Header = () => {
     return (
         <View>
             <Image 
-                source={require('../assets/images/pool.jpg')} 
+                source={require('../../assets/images/pool.jpg')}
                 style={styles.image}
             />
             <View style={styles.topButtons}>

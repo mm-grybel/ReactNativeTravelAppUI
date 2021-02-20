@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import { gs, colors } from '../styles/styles';
+import { gs, colors } from '../../styles/styles';
 
 const Amenities = () => {
     return (
