@@ -1,6 +1,8 @@
 import React from 'react';
-import { View, Text, StatusBar, StyleSheet } from 'react-native';
+import { View, ScrollView, StatusBar, StyleSheet } from 'react-native';
+import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
+import CustomHeaderButton from '../components/navigation/CustomHeaderButton';
 import Header from '../components/home/Header';
 import Bookmark from '../components/home/Bookmark';
 import About from '../components/home/About';
@@ -10,23 +12,43 @@ import Address from '../components/home/Address';
 import Extras from '../components/home/Extras';
 import { colors } from '../styles/styles';
 
+
 const HomeScreen = () => {
     return (
-        <View style={styles.container}>
-            <StatusBar barStyle='light-content' />
+        <ScrollView>
+            <View style={styles.container}>
+                <StatusBar barStyle='light-content' />
 
-            <Header />
+                <Header />
 
-            <View>
-                <Bookmark />
-                <About />
-                <Stats />
-                <Amenities />
-                <Address />
-                <Extras />
+                <View>
+                    <Bookmark />
+                    <About />
+                    <Stats />
+                    <Amenities />
+                    <Address />
+                    <Extras />
+                </View>
             </View>
-        </View>
+        </ScrollView>
     );
+};
+
+HomeScreen.navigationOptions = (navigationData) => {
+    return {
+        headerTitle: 'Home',
+        headerRight: () => (
+            <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+                <Item 
+                    title='Profile'
+                    iconName='person-outline'
+                    onPress={() => {
+                        navigationData.navigation.navigate('Profile')
+                    }}
+                />
+            </HeaderButtons>
+        )
+    };
 };
 
 const styles = StyleSheet.create({

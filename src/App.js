@@ -1,24 +1,17 @@
 import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
+import Navigator from './navigation/Navigator';
 import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen';
 import { colors } from './styles/styles';
 
 class App extends React.Component {
   render () {
     return (
-      <ScrollView style={styles.container}>
-        <HomeScreen />
-      </ScrollView>
+      <Navigator />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.darkBg
-  }
-});
 
 export default App;
